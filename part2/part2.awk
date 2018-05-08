@@ -75,13 +75,21 @@ packet_id = $12;
 	}
 
 
-   if ( timeInterval > 0.5) {
+    if ( timeInterval > 0.5) {
 
         printf("%f \t %f \t %f \t %f \t %f\n", time2, delay[11], delay[12], delay[16], delay[17]) > "example2avgdelay.xls";
 
+        delay[11] = 0;
+        delay[12] = 0;
+        delay[16] = 0;
+        delay[17] = 0;
 
+        count[11] = 0;
+        count[12] = 0;
+        count[16] = 0;
+        count[17] = 0;
 
-      time1 = $2;
+        time1 = $2;
 
    }
 
